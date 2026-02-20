@@ -1,0 +1,15 @@
+.alt{
+    background: linear-gradient(180deg, transparent, rgba(255,255,255,0.02), transparent);
+  }
+  .courseGrid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 980px){
+    .courseGrid{grid-template-columns: repeat(2, 1fr);}
+  }
+  @media (max-width: 560px){
+    .courseGrid{grid-template-columns: 1fr;}
+  }
+  @media (max-width: 250px){
+    .courseGrid{gap: 12px;}
+  }

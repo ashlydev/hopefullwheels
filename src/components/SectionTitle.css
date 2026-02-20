@@ -1,0 +1,24 @@
+.titleWrap{margin-bottom: 18px;}
+.kicker{
+  display:inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border:1px solid var(--border);
+  background: rgba(245,179,1,0.12);
+  color: var(--yellow);
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+}
+.titleWrap h2{
+  margin: 10px 0 6px;
+  font-size: 28px;
+  letter-spacing: -0.3px;
+}
+.titleWrap p{
+  margin:0;
+  color: var(--muted);
+  max-width: 80ch;
+  line-height: 1.5;
+}

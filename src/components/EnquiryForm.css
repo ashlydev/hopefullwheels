@@ -1,0 +1,52 @@
+.formWrap{display:grid; gap: 14px;}
+.formCard{
+  padding: 18px;
+  border-radius: var(--radius2);
+  background: rgba(255,255,255,0.04);
+  border:1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.row{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.field label{
+  display:block;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.field input, .field select, .field textarea{
+  width:100%;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border:1px solid var(--border);
+  background: rgba(0,0,0,0.35);
+  color: var(--text);
+  outline:none;
+}
+.field input:focus, .field select:focus, .field textarea:focus{
+  border-color: rgba(245,179,1,0.55);
+}
+.submit{
+  margin-top: 12px;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+}
+.hint{
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+@media (max-width: 700px){
+  .row{grid-template-columns: 1fr;}
+}
+@media (max-width: 250px){
+  .formCard{padding: 12px;}
+  .field input, .field select, .field textarea{padding: 10px;}
+}
